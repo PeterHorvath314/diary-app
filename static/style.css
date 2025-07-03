@@ -1,0 +1,32 @@
+body {
+    font-family: sans-serif;
+    max-width: 600px;
+    margin: auto;
+    padding: 1em;
+    background: #f7f7f7;
+}
+input, textarea, button {
+    display: block;
+    width: 100%;
+    margin: 0.5em 0;
+    padding: 0.5em;
+}
+button {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #306acb;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    background: white;
+    padding: 1em;
+    margin-top: 0.5em;
+    border-radius: 5px;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Diary</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>My Diary</h1>
+    <form method="POST">
+        <input name="date" type="date" required>
+        <input name="mood" placeholder="Mood" required>
+        <textarea name="notes" placeholder="What did you do today?" required></textarea>
+        <button>Save</button>
+    </form>
+    <h2>Entries</h2>
+    <ul>
+        {% for e in entries %}
+            <li><b>{{ e.date }}</b>: {{ e.mood }} - {{ e.notes }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
